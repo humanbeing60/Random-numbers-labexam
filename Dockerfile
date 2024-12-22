@@ -1,9 +1,12 @@
-FROM  Openjdk:latest
+FROM  openjdk:latest
 
 WORKDIR /app
 
 COPY . /app
 
-RUN "javac RandomNumber.java"
+RUN javac RandomNumber.java
 
-CMD [ "java RandomNumber" ]
+CMD [ "java", "RandomNumber" ]
+
+
+
